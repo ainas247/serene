@@ -300,6 +300,11 @@ color: white;
 
 }
 @media screen and (max-width:800px){
+  #banner-text h1{
+   font-size: 40px;
+  font-family: fantasy;
+}
+
   .brief{
     width: 90%;
   }
