@@ -1,0 +1,341 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p{
+  font-size: 17px;
+  color: rgb(66, 65, 65);
+  font-family: roboto;
+}
+
+#container {
+  width: 100%;
+  z-index: 0;
+}
+
+
+#top {
+  width: 100%;
+  background-color: #640265;
+  height: 40px;
+}
+
+#contacts {
+  width: 500px;
+  position: absolute;
+  right: 100px;
+  text-align: center;
+  color: white;
+  font-family: roboto;
+  top: 10px;
+}
+
+
+#call-us {
+  font-weight: bold;
+}
+
+#email {
+  font-weight: bold;
+}
+ 
+
+#contacts a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu-logo {
+  width: 100%;
+  overflow: auto;
+
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  float: left;
+}
+
+
+
+#logo img {
+  width: 100%;
+}
+
+
+#menu {
+  margin-right: 130px;
+  margin-top: 50px;
+  float: right;
+}
+
+
+#menu a {
+  text-decoration: none;
+  color: white;
+  font-family: roboto;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #d61ed6;
+  margin: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#menu a:hover {
+  background-color: #640265;
+  border: solid #d61ed6;
+} 
+
+.fa-bars{
+  color: #d61ed6;
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  cursor: pointer;
+}
+
+#banner{
+  width: 100%;
+  height: 500px;
+ background-image: url("images/banner2.jpeg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ 
+}
+
+#banner-text{
+  color: #ffffff;
+  position: relative;
+  left: 100px;
+  font-size: 30px;
+  top: 100px;
+  width: 50%;
+ 
+}
+#banner-text h1{
+   font-size: 70px;
+  font-family: fantasy;
+}
+
+#text{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+#text h1{
+  font-family: roboto;
+}
+.brief-container{
+  width: 100%;
+  text-align: center;
+}
+
+.brief{
+  width: 25%;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(168, 8, 134, 0.5);
+}
+.brief:hover{
+  width: 25%;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+    box-shadow: 0 15px 15px 0 rgba(168, 8, 134, 0.5);
+    transition: all;
+}
+
+#circle-holder{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+#circle1{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #d61ed6;
+  opacity: 0.2;
+  position: absolute;
+}
+#circle2{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #640265;
+  opacity: 0.2;
+  position: absolute;
+  left: 150px;
+  top: 0px;
+}
+
+#circle-holder2{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 0px;
+
+}
+
+#circle3{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #d61ed6;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#circle4{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #640265;
+  opacity: 0.2;
+  position: absolute;
+  right: 150px;
+  top: 0px;
+}
+
+#footer{
+  background-color: #640265;
+    margin-top: 100px;
+    height: 100px;
+    width: 100%;
+    border: solid;
+
+}
+
+#copy{
+  width: 40%;
+  float: left;
+  margin: 25px;
+  color: white;
+}
+#social{
+  width: 40%;
+  float: right;
+  text-align: right;
+  margin: 20px;
+}
+
+#social .fab{
+  margin: 5px;
+}
+
+/* -------------------ABOUT US--------------- */
+#about-img-text{
+  width: 100%;
+  overflow: auto;
+  margin-top: 50px;
+}
+
+#about-image{
+  width: 50%;
+  float: left;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+
+}
+#about-image img{
+  width: 100%;
+}
+#about-content{
+  margin-top: 2px;
+  width: 50%;
+  padding: 50px;
+  background-color: #640265;
+  float: right;
+  text-align: justify;
+  margin-top: 100px;
+
+}
+#about-content p{
+color: white;
+
+}
+/* RESPONSIVE */
+
+@media screen and (max-width:1000px){
+
+#contacts {
+  width: 100%;
+ text-align: center;
+ position: static;
+}
+  #menu{
+    display: none;
+  }
+    .fa-bars{
+    display: block;
+  }
+
+  #contacts a {
+  color: white;
+  font-size: 15px;
+ 
+}
+
+#top{
+  height: 30px;
+}
+
+}
+@media screen and (max-width:800px){
+  .brief{
+    width: 90%;
+  }
+  .brief:hover{
+  width: 90%;
+
+}
+#copy{
+  width: 90%;
+  margin-top: 10px;
+  color: white;
+  float: none;
+  text-align: center;
+
+}
+#social{
+  width: 90%;
+  float: none;
+  text-align: center;
+  
+}
+#social .fa-2x{
+  font-size: 20px;
+}
+
+}
+@media screen and (max-width:700px){
+
+  #logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.fa-bars{
+  top: 70px;
+}
+
+}
