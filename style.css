@@ -281,6 +281,7 @@ p {
     width: 100%;
     text-align: center;
     position: static;
+    padding: 2px;
   }
 
   .toggle {
@@ -289,7 +290,7 @@ p {
 
   #contacts a {
     color: white;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   #top {
