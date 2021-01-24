@@ -1,0 +1,55 @@
+<style>
+    #inp input {
+        width: 100%;
+        height: 40px;
+    }
+
+    textarea {
+        width: 100%
+    }
+
+    select {
+        width: 100%;
+        height: 30px;
+    }
+
+    #btn input {
+        background-color: rgb(91, 160, 28);
+        color: white;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+</style>
+<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+    <!-- Name -->
+    <div id="inp">
+    <label for="">Fullname</label><input type="text" name="name"><br>
+    <!-- Email field (required) -->
+    <label for="">Email</label> <input type="text" name="email"><br>
+    <label for="">Phone number</label> <input name="custom_phone" type="text" value=""><br>
+    <label for="">Alternative phone number</label><input name="custom_mobile_phone" type="text" value=""><br>
+    <label for="">Address</label> <textarea name="custom_comment"></textarea><br>
+    <label for="">How many you want to buy? Select:</label><select name="custom_select">
+        <option value="N11,500 FOR 1">N11,500 FOR 1</option>
+        <option value="N19,500 FOR 2">N19,500 FOR 2</option>
+        <option value="N25,500 FOR 3">N25,500 FOR 3</option>
+        <option value="N30,500 FOR 5">N30,500 FOR 5</option>
+    </select><br>
+    </div>
+    <input id="webform_consent#zONh_0" type="checkbox" name="webform[consent#zONh-ver#GbWY]" value="true"> <label
+        for="webform_consent#zONh_0" style="color: red; font-weight: bold;">I agreed that I have the money ready on delivery and someone can take the product
+        on my behalf if I am not around</label> <br>
+    <!-- List token -->
+    <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+    <input type="hidden" name="campaign_token" value="qqe70">
+    <!-- Thank you page (optional) -->
+    <input type="hidden" name="thankyou_url" value="https://maxsolution.com.ng/jalin-thanks/">
+    <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+    <input type="hidden" name="start_day" value="0">
+    <!-- Subscriber button -->
+    <div id="btn">
+        <input type="submit" value="Order Now">
+    </div>
+</form>
