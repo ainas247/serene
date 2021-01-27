@@ -318,6 +318,9 @@ p {
   .brief:hover {
     width: 90%;
   }
+    .brief{
+    width: 90%;
+  }
   #copy {
     width: 90%;
     margin-top: 10px;
