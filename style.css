@@ -215,9 +215,9 @@ p {
 #footer {
   background-color: #640265;
   margin-top: 100px;
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
-  border: solid;
+  /* border: solid; */
 }
 
 #copy {
@@ -332,6 +332,10 @@ p {
     width: 90%;
     float: none;
     text-align: center;
+  }
+
+    #social .fab{
+    color: #640265;
   }
   #social .fa-2x {
     font-size: 20px;
